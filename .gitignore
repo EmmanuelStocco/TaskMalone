@@ -1,0 +1,39 @@
+# Ignorar arquivos temporários gerados pelo Visual Studio
+.vscode/
+.vs/
+bin/
+obj/
+
+# Ignorar arquivos de dependências e pacotes
+packages/
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+# Ignorar o arquivo de configuração de ambiente
+/.vscode
+
+# Ignorar arquivos de compilação
+*.dll
+*.exe
+
+# Ignorar arquivos de publicação
+publish/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de depuração
+*.pdb
+
+# Ignorar arquivos temporários
+*.swp
+*~
+
+# Ignorar arquivos gerados pelo Rider
+.idea/
+*.sln.iml
+
+# Ignorar o arquivo de configuração do Visual Studio
+.vscode/
