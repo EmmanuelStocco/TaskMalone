@@ -1,3 +1,6 @@
+using ListaDeContatos.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace ListaDeContatos
 {
     public class Program
@@ -8,6 +11,9 @@ namespace ListaDeContatos
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<BancoContext>
+                (options => options.UseSqlServer("Server=DESKTOP-I91URTC\\SQLEXPRESS;Database=DB_TaskMalone;Trusted_Connection=True;Encrypt=False;"));
 
             var app = builder.Build();
 
